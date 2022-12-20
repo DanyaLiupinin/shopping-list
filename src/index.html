@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shopping-list</title>
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main class="main">
+    <section class="container">
+      <h1 class="container__title">Shopping List</h1>
+      <div class="container__inputs">
+        <form class="container__form" name="container__form" action="#" method="post">
+          <input type="text" placeholder="Название продукта" class="container__input container__input_type_product" required>
+          <input type="number" placeholder="Количество" class="container__input container__input_type_amount" required>
+          <button type="submit" class="container__add-button">Добавить</button>
+        </form>
+      </div>
+      <section class="container__columns">
+        <div class="container__column container__column_type_desired">
+
+        </div>
+
+        <div class="container__column container__column_type_obtained">
+
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <template id="card-template">
+    <div class="container__card container__card_type_desired">
+      <h2 class="container__card-product">Продукт</h2>
+      <p class="container__card-amount">15</p>
+      <button type="button" class="container__obtained-button">Купил</button>
+      <button type="button" class="container__delete-button">удалить</button>
+    </div>
+  </template>
+
+</body>
+
+</html>
