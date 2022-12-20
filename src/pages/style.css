@@ -66,7 +66,7 @@
   margin-top: 30px;
   background-color: mediumaquamarine;
   border-radius: 50px;
-
+  position: relative;
 }
 
 .container__card-product {
@@ -79,19 +79,38 @@
 
 .container__obtained-button {
   padding: 0;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: unset;
+  position: absolute;
+  top: 5px;
+  right: -60px;
+  border: 1px solid black;
+  border-radius: 50px;
 }
 
 .container__obtained-image {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
+  cursor: pointer;
 }
 
 .container__delete-button {
-  background-color: unset;
   padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: unset;
+  position: absolute;
+  bottom: 5px;
+  right: -60px;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+
+.container__delete-image {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .container__card_type_obtained {
