@@ -30,7 +30,7 @@ this._setEventListeners(this._card)
 }
 
 _obtainedProduct (card) {
-  // тут надо добавить класс со стилем
+  card.classList.add('container__card_type_obtained')
   this._transferCard(card)
 }
 
