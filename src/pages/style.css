@@ -85,12 +85,16 @@
 
 .container__card-amount {
   margin: 0;
-  outline: 1px solid black;
   width: fit-content;
   width: 20%;
   border-radius: 0 50px 50px 0;
   margin: auto 0;
   padding: 40px 0;
+  background-color: aquamarine;
+}
+
+.container__card-amount_type_obtained {
+  background-color: red;
 }
 
 .container__obtained-button {
@@ -103,6 +107,10 @@
   right: -60px;
   border: 1px solid black;
   border-radius: 50px;
+}
+
+.container__obtained-button_inactive {
+  display: none;
 }
 
 .container__obtained-image {
