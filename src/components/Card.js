@@ -33,7 +33,10 @@ class Card {
     card.classList.add('container__card_type_obtained')
     card.querySelector('.container__card-amount').classList.add('container__card-amount_type_obtained')
     card.querySelector('.container__obtained-button').classList.add('container__obtained-button_inactive')
+    card.querySelector('.container__return-button_inactive').classList.add('container__return-button')
+    card.querySelector('.container__return-button_inactive').classList.remove('container__return-button_inactive')
     this._transferCard(card)
+    console.log(card)
   }
 
   _setEventListeners(card) {

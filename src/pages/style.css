@@ -97,6 +97,8 @@
   background-color: red;
 }
 
+
+
 .container__obtained-button {
   padding: 0;
   width: 40px;
@@ -113,11 +115,38 @@
   display: none;
 }
 
+
+
+.container__return-button {
+  display: block;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: unset;
+  position: absolute;
+  top: 5px;
+  right: -60px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.container__return-button_inactive {
+  display: none;
+}
+
 .container__obtained-image {
   width: 95%;
   height: 95%;
   cursor: pointer;
 }
+
+.container__return-image {
+  width: 60%;
+  height: 60%;
+  cursor: pointer;
+}
+
+
 
 .container__delete-button {
   padding: 0;

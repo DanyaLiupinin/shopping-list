@@ -44,7 +44,6 @@ const container = new Section(
 
 function transferCard (card) {
   container.addItem(card, obtainedContainer)
-  //container.removeItem(card, productContainer)
 }
 
 // добавление начального массива
