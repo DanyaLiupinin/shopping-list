@@ -15,8 +15,9 @@ mainForm.addEventListener('submit', (e) => {
   e.preventDefault()
 
   const card = createCard(inputProduct.value, inputAmount.value)
-
   addCard(card);
+  inputProduct.value = ''
+  inputAmount.value = ''
 })
 
 function createCard (product, amount) {
