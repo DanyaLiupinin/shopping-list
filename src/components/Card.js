@@ -1,9 +1,10 @@
 class Card {
-  constructor(product, amount, selector, transferCard) {
+  constructor(product, amount, selector, transferCard, returnCard) {
     this._productName = product
     this._productAmount = amount
     this._selector = selector
     this._transferCard = transferCard
+    this._returnCardBack = returnCard
   }
 
   _getTemplate() {
@@ -36,7 +37,14 @@ class Card {
     card.querySelector('.container__return-button_inactive').classList.add('container__return-button')
     card.querySelector('.container__return-button_inactive').classList.remove('container__return-button_inactive')
     this._transferCard(card)
-    console.log(card)
+  }
+
+  _returnCard (card) {
+    card.classList.remove('container__card_type_obtained')
+    card.querySelector('.container__card-amount').classList.remove('container__card-amount_type_obtained')
+    card.querySelector('.container__obtained-button').classList.remove('container__obtained-button_inactive')
+    card.querySelector('#returnCardButton').classList.add('container__return-button_inactive')
+    this._returnCardBack(card)
   }
 
   _setEventListeners(card) {
@@ -44,6 +52,11 @@ class Card {
       .addEventListener('click', () => {
         this._obtainedProduct(card)
       })
+    card.querySelector('#returnCardButton')
+      .addEventListener('click', () => {
+        this._returnCard(card)
+      })
+
   }
 
 

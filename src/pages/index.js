@@ -21,7 +21,7 @@ mainForm.addEventListener('submit', (e) => {
 
 function createCard (product, amount) {
 
-  const newCard = new Card(product, amount, '#card-template', transferCard)
+  const newCard = new Card(product, amount, '#card-template', transferCard, addCard)
 
   const card = newCard.generateCard()
 
