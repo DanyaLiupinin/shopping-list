@@ -3,6 +3,7 @@
 .main {
   background-color: lightskyblue;
   height: 100%;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .container {
@@ -16,6 +17,7 @@
 .container__title {
     color: black;
     margin: 0;
+    padding-top: 60px;
 }
 
 .container__inputs {
@@ -30,11 +32,26 @@
 }
 
 .container__input_type_product {
-    width: 70%;
+    width: 50%;
+
+    background-color: inherit;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    padding: 0;
 }
 
 .container__input_type_amount {
     width: 20%;
+
+    background-color: inherit;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    padding: 0;
+    margin-left: 10px;
 }
 
 .container__add-button {
@@ -43,6 +60,9 @@
     margin-top: 30px;
     margin-bottom: 30px;
     width: 10%;
+    padding: 0;
+    border: 1px solid black;
+    margin-left: 10px;
 }
 
 .container__columns {
