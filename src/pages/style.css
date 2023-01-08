@@ -74,7 +74,6 @@
 .container__column {
     width: 48%;
     height: fit-content;
-    outline: 1px solid blue;
     border-radius: 30px;
     min-height: 700px;
 }
@@ -188,4 +187,29 @@
 .container__card_type_obtained {
   background-color: tomato;
   opacity: .5;
+}
+
+
+@media (max-width: 976px) {
+  .container__add-button {
+    width: 20%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container__card-product {
+    font-size: 20px;
+  }
+
+  .container__columns {
+    flex-direction: column;
+    outline: 1px solid red;
+  }
+
+  .container__column {
+    min-height: fit-content;
+    width: 80%;
+    margin-left: 80px;
+  }
+
 }

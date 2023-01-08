@@ -22,7 +22,7 @@ mainForm.addEventListener('submit', (e) => {
 
 function createCard (product, amount) {
 
-  const newCard = new Card(product, amount, '#card-template', transferCard, addCard)
+  const newCard = new Card(product, amount, '#card-template', transferCard, addCard, deleteCard)
 
   const card = newCard.generateCard()
 
@@ -45,6 +45,10 @@ const container = new Section(
 
 function transferCard (card) {
   container.addItem(card, obtainedContainer)
+}
+
+function deleteCard (card) {
+  container.deleteItem(card)
 }
 
 // добавление начального массива

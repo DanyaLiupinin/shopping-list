@@ -14,14 +14,18 @@ class Section {
   }
 
 
-  addItem(element, containerSelector) { // добавляем на страницу
+  addItem(card, containerSelector) { // добавляем на страницу
     this._container = document.querySelector(containerSelector)
-    this._container.append(element)
+    this._container.append(card)
   }
 
-  removeItem(element, containerSelector) {
+  removeItem(card, containerSelector) {
     this._container = document.querySelector(containerSelector)
-    this._container.remove(element)
+    this._container.remove(card)
+  }
+
+  deleteItem(card) {
+    card.remove()
   }
 
 }
