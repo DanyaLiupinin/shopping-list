@@ -12,6 +12,8 @@
 
     width: 80%;
     margin: 0 auto;
+
+    padding-bottom: 100%;
 }
 
 .container__title {
@@ -209,7 +211,36 @@
   .container__column {
     min-height: fit-content;
     width: 80%;
-    margin-left: 80px;
+    margin-left: 70px;
+    margin-right: 30px;
   }
 
 }
+
+@media (max-width: 589px) {
+
+  .container__column {
+    margin-left: 40px;
+  }
+
+}
+
+
+@media (max-width: 489px) {
+  .container__add-button {
+    width: 40%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 376px) {
+
+  .container__column {
+    margin-left: 20px;
+  }
+
+}
+
+
+
+
